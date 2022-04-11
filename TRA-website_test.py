@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-# for local PC comment below code before git commit
+# for local PC comment below code before git commit 
 # driver = webdriver.Chrome()
 
 # for jenkins server uncomment below code before git commit
