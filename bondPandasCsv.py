@@ -98,7 +98,7 @@ def sliceIt(bondNum, s):
     step = 20
     for i in range(start, end, step):
         x = i
-        b = bondNum2[x : x + step]
+        b = bondNum2[x: x + step]
         addBondNum(b)
     newPrize(s)
 
@@ -132,7 +132,7 @@ def getWalda200(df):
 
 
 def get200(df):
-    s = "bond 200"
+    s = "Walda 200"
     price = "Rs. 200/-"
     selectOpt(price)
     bondNum = df.bond_200
@@ -154,9 +154,9 @@ def getCsv():
     file = open(filePath, "r")
     df = pd.read_csv(filePath)
     file.close()
-    # get100(df)
+    # get200(df)
     # getWalda200(df)
-    # get750(df)
+    get750(df)
     get200(df)
 
 
